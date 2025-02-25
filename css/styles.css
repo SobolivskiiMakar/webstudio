@@ -1,0 +1,28 @@
+ header a[href="mailto:info@devstudio.com"] {
+    color: blue;
+}
+.meeting {
+    background-color: black;
+}
+h1 {
+    color: white;
+}
+button {
+    color: white;
+    background-color:blue ;
+}
+footer {
+    background-color: black;
+}
+footer h3 {
+    color: white;
+}
+footer a {
+    color: white;
+}
+nav a {
+    color: black;
+}
+a[href="./index.html"] {
+    color: blue;
+}
