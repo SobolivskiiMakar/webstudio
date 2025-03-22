@@ -4,11 +4,22 @@
     --nav-color: rgba(33, 33, 33, 1);
     --title-color: rgba(33, 33, 33, 1);
     --text-color: rgba(117, 117, 117, 1);
+    --accent2-color: rgba(255, 255, 255, 1);
 }
 
 /* header */
 .heder-title {
     color: #000;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+
+span {
+    color: var(--akcent-color);
     font-family: Raleway;
     font-size: 26px;
     font-style: normal;
@@ -58,12 +69,8 @@
 }
 
 /* meeting */
-.meeting {
-    background: var(--main-background);
-}
-
 .title {
-    color: #FFF;
+    color: var(--accent2-color);
     text-align: center;
     font-family: Roboto;
     font-size: 44px;
@@ -75,7 +82,7 @@
 }
 
 .meeting-button {
-    color: #FFF;
+    color: var(--accent2-color);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -83,6 +90,9 @@
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
+    border-radius: 4px;
+    background:var(--akcent-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* features */
@@ -153,9 +163,10 @@
     letter-spacing: 0.48px;
 }
 
+
 /* footer */
 .footer-title {
-    color: #FFF;
+    color: var(--accent2-color);
     font-family: Raleway;
     font-size: 26px;
     font-style: normal;
@@ -165,13 +176,12 @@
 }
 
 .footer-link {
-    color: #FFF;
+    color: var(--accent2-color);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 171.429% */
     letter-spacing: 0.42px;
 }
 
