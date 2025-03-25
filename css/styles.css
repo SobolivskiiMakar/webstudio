@@ -175,7 +175,7 @@ span {
     letter-spacing: 0.78px;
 }
 
-.footer-link {
+#footer-a {
     color: var(--accent2-color);
     font-family: Roboto;
     font-size: 14px;
@@ -185,7 +185,7 @@ span {
     letter-spacing: 0.42px;
 }
 
-#addres-a {
+.footer-link {
     color: var(--text-color);
     font-family: Roboto;
     font-size: 14px;
