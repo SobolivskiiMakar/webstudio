@@ -21,6 +21,15 @@
     padding-bottom: 25px;
 }
 
+.header-container {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
 .heder-title {
     color: #000;
     font-family: Raleway;
@@ -41,6 +50,13 @@ span {
     letter-spacing: 0.78px;
 }
 
+.header-list {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+    margin-right: 344px;
+}
+
 .header-link {
     color: var(--title-color);
     font-family: Roboto;
@@ -59,6 +75,11 @@ span {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+}
+
+.address-list {
+    display: flex;
+    gap: 50px;
 }
 
 .address-link {
@@ -85,6 +106,14 @@ span {
 .buttons {
     padding-top: 94px;
     padding-bottom: 50px;
+}
+
+.buttons-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    /* width: 73px;
+    height: 38px; */
 }
 
 .button {
@@ -119,6 +148,12 @@ span {
     padding-bottom: 94px;
 }
 
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .projects-title {
     color: var(--title-color);
     font-family: Roboto;
@@ -127,6 +162,17 @@ span {
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 1.08px;
+    padding-top: 20px;
+    margin-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.projects-article {
+    width: 370px;
+    height: 404px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    background: rgba(255, 255, 255, 1);
 }
 
 .projects-text {
@@ -137,12 +183,22 @@ span {
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.48px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 /* footer */
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: rgba(47, 48, 58, 1);
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 
 .footer-title {
@@ -153,6 +209,7 @@ span {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
+    margin-bottom: 20px;
 }
 
 #footer-a {
