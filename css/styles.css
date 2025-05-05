@@ -162,22 +162,33 @@ span {
     gap: 30px;
 }
 
-.article-div {
-    display: flex;
+.features-item::before {
+    content: "";
+    border-radius: 4px;
+    background: #F5F4FA;
     width: 270px;
     height: 120px;
     flex-shrink: 0;
-    border-radius: 4px;
-    background: #F5F4FA;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    background-image: url("../imagine/antenna.webp");
     margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
 }
 
-.features-img {
-    width: 70px;
-    height: 70px;
-    flex-shrink: 0;
+.features-item:nth-child(2)::before {
+    background-image: url("../imagine/clock.webp");
+
+}
+
+.features-item:nth-child(3)::before {
+    background-image: url("../imagine/diagram.webp");
+
+}
+
+.features-item:last-child::before {
+    background-image: url("../imagine/astronaut.webp");
 
 }
 
@@ -252,7 +263,7 @@ span {
 
 .team-article {
     background-color: var(--accent2-color);
-    width: фц;
+    width: 270px;
     height: 368px;
 }
 
