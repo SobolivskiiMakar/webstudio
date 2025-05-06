@@ -109,6 +109,8 @@ span {
     padding-bottom: 200px;
     background-color: rgba(47, 48, 58, 1);
     background-image: url("../imagine/sectionhero.webp");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .meeting-container {
