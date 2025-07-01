@@ -55,7 +55,7 @@ span {
     display: flex;
     gap: 50px;
     margin-left: 93px;
-    margin-right: 344px;
+    /* margin-right: 344px; */
 }
 
 .header-link {
@@ -80,7 +80,21 @@ span {
 
 .address-list {
     display: flex;
-    gap: 50px;
+    gap: 30px;
+}
+
+.address-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.address-item:hover {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--akcent-color);
+    fill: var(--akcent-color);
 }
 
 .address-link {
@@ -101,6 +115,29 @@ span {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+}
+
+.header-envelope {
+    width: 16px;
+    height: 12px;
+    margin-left: 318px;
+}
+
+.header-envelope:hover{
+    width: 16px;
+    height: 12px;
+    fill: var(--akcent-color);
+}
+
+.header-smartphone {
+    width: 10px;
+    height: 16px;
+}
+
+.header-smartphone:hover {
+    width: 10px;
+    height: 16px;
+    fill: var(--akcent-color);
 }
 
 /* meeting */
