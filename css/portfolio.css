@@ -18,7 +18,6 @@
 /* header */
 .header {
     padding-top: 24px;
-    border-bottom: solid rgba(236, 236, 236, 1) 1px;
     padding-bottom: 25px;
 }
 
@@ -32,7 +31,7 @@
 }
 
 .heder-title {
-    color: rgb(0, 0, 0);
+    color: #000;
     font-family: Raleway;
     font-size: 26px;
     font-style: normal;
@@ -55,7 +54,7 @@ span {
     display: flex;
     gap: 50px;
     margin-left: 93px;
-    margin-right: 344px;
+    /* margin-right: 344px; */
 }
 
 .header-link {
@@ -80,7 +79,21 @@ span {
 
 .address-list {
     display: flex;
-    gap: 50px;
+    gap: 30px;
+}
+
+.address-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.address-item:hover {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--akcent-color);
+    fill: var(--akcent-color);
 }
 
 .address-link {
@@ -101,6 +114,31 @@ span {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+}
+
+.header-envelope {
+    width: 16px;
+    height: 12px;
+    margin-left: 318px;
+    fill: rgb(117, 117, 117);
+}
+
+.header-envelope:hover {
+    width: 16px;
+    height: 12px;
+    fill: var(--akcent-color);
+}
+
+.header-smartphone {
+    width: 10px;
+    height: 16px;
+    fill: rgb(117, 117, 117);
+}
+
+.header-smartphone:hover {
+    width: 10px;
+    height: 16px;
+    fill: var(--akcent-color);
 }
 
 /* buttons */
@@ -240,6 +278,11 @@ span {
     background-color: rgba(47, 48, 58, 1);
 }
 
+.footer-container {
+    display: flex;
+    gap: 70px;
+}
+
 .footer-list {
     display: flex;
     flex-direction: column;
@@ -275,4 +318,60 @@ span {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+}
+
+.footer-box2 {
+    padding-top: 12px;
+}
+
+.footer-subtittle {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.footer-svgs {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 10px;
+}
+
+.footer-div {
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.footer-div:hover {
+    width: 44px;
+    height: 44px;
+    border: solid rgba(33, 150, 243, 1);
+    border-radius: 50%;
+    background-color: rgba(33, 150, 243, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-div {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-svg {
+    width: 20px;
+    height: 20px;
+    fill: rgba(255, 255, 255, 1);
 }
