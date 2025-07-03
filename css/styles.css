@@ -93,8 +93,8 @@ span {
     display: flex;
     gap: 10px;
     align-items: center;
-    color: var(--akcent-color);
-    fill: var(--akcent-color);
+    /* color: var(--akcent-color);
+    fill: var(--akcent-color); */
 }
 
 .address-link {
@@ -121,24 +121,26 @@ span {
     width: 16px;
     height: 12px;
     margin-left: 318px;
+    fill: rgb(117, 117, 117);
 }
 
-.header-envelope:hover{
+/* .header-envelope:hover{
     width: 16px;
     height: 12px;
     fill: var(--akcent-color);
-}
+} */
 
 .header-smartphone {
     width: 10px;
     height: 16px;
+    fill: rgb(117, 117, 117);
 }
 
-.header-smartphone:hover {
+/* .header-smartphone:hover {
     width: 10px;
     height: 16px;
     fill: var(--akcent-color);
-}
+} */
 
 /* meeting */
 .meeting {
@@ -304,7 +306,7 @@ span {
 .team-article {
     background-color: var(--accent2-color);
     width: 270px;
-    height: 368px;
+    height: 428px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 
 }
@@ -343,7 +345,48 @@ span {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.48px;
-    padding-bottom: 30px;
+    /* margin-bottom: 28px; */
+}
+
+.svgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.team-div {
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.team-div:hover {
+    width: 44px;
+    height: 44px;
+    border: solid rgba(33, 150, 243, 1);
+    border-radius: 50%;
+    background-color: rgba(33, 150, 243, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+    margin-bottom: 42px;
+    
+}
+
+.team-svg {
+    width: 20px;
+    height: 20px;
+    fill: rgba(175, 177, 184, 1);
+}
+
+
+.team-svg:hover {
+    width: 20px;
+    height: 20px;
+    fill: rgba(255, 255, 255, 1);
 }
 
 
