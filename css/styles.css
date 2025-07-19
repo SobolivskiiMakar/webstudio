@@ -94,15 +94,15 @@ span {
     gap: 10px;
     align-items: center;
     color: var(--akcent-color);
-   
+
 }
 
-.address-item:hover > .header-envelope {
-     fill: var(--akcent-color);
-} 
+.address-item:hover>.header-envelope {
+    fill: var(--akcent-color);
+}
 
 
-.address-item:hover > .header-smartphone {
+.address-item:hover>.header-smartphone {
     fill: var(--akcent-color);
 }
 
@@ -293,6 +293,33 @@ span {
     margin-bottom: 50px;
 }
 
+.whatwedo-item {
+    position: relative;
+}
+
+.whatwedo-box {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatwedo-text {
+    color: var(--accent2-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
 /* our-team */
 .team {
     padding-top: 94px;
@@ -401,7 +428,7 @@ span {
 
 }
 
-.team-div:hover > .team-svg {
+.team-div:hover>.team-svg {
     fill: rgba(255, 255, 255, 1);
 }
 
@@ -454,7 +481,7 @@ span {
     fill: var(--akcent-color);
 }
 
-.customers-div:hover > .custovers-svg {
+.customers-div:hover>.custovers-svg {
     fill: var(--akcent-color);
 }
 
