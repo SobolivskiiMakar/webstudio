@@ -656,9 +656,8 @@ span {
     margin-bottom: 10px;
 }
 
-.modal-input .modal-svg:hover {
+.modal-input:focus {
     border: 1px solid rgb(33, 150, 243);
-    fill: rgb(33, 150, 243);
 }
 
 .text {
@@ -694,9 +693,9 @@ span {
     top: 8px;
 }
 
-.modal-box>.modal-close:hover {
+/* .modal-box>.modal-close:hover {
     fill: rgba(33, 150, 243, 1);
-}
+} */
 
 .modal-close {
     width: 18px;
@@ -759,8 +758,14 @@ span {
     background-color: rgb(33, 33, 33);
 }
 
-.checkbox:checked {
-    background-color: rgb(33, 150, 243);
+.modal-input:focus {
+    border: solid rgb(33, 150, 243) 1px;
+    outline: none;
+}
+
+.textarea:focus {
+    border: solid rgb(33, 150, 243) 1px;
+    /* outline: none; */
 }
 
 .modal-button {
@@ -783,6 +788,11 @@ span {
     margin-right: 124px;
 }
 
+input + .modal-svg:focus {
+   fill: #2196F3;
+}
+
 .is-hidden {
     display: none;
 }
+

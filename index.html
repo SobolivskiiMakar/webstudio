@@ -70,7 +70,9 @@
       <section class="meeting">
         <div class="container meeting-container">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="meeting-button" type="button" data-modal-open>Замовити послугу</button>
+          <button class="meeting-button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!--features -->
@@ -452,45 +454,45 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden"  data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal-box">
           <svg class="modal-close" data-modal-close>
-            <use href="./imagine/symbol-defs.svg#icon-close"></use>
+            <use href="./imagine/symbol-defs.svg#icon-close" ></use>
           </svg>
         </div>
         <h2 class="modal-tittle">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="modal-form">
           <p class="text">Ім'я</p>
-          <label for="">
-            <div>
+          <label for="text">
+            <div class="input-svg">
               <svg class="modal-svg">
                 <use href="./imagine/symbol-defs.svg#icon-person"></use>
               </svg>
-              <input type="text" class="modal-input" />
+              <input type="text" class="modal-input" required/>
             </div>
           </label>
           <p class="text">Телефон</p>
-          <label for="">
-            <div>
+          <label for="tel">
+            <div class="input-svg">
               <svg class="modal-svg">
                 <use href="./imagine/symbol-defs.svg#icon-phone"></use>
               </svg>
-              <input type="tel" class="modal-input" />
+              <input type="tel" class="modal-input" required title="Введіть свій телефон"/>
             </div>
           </label>
           <p class="text">Пошта</p>
-          <label for="">
-            <div>
+          <label for="email">
+            <div class="input-svg">
               <svg class="modal-svg">
                 <use href="./imagine/symbol-defs.svg#icon-email"></use>
               </svg>
-              <input type="email" class="modal-input" />
+              <input type="email" class="modal-input" required/>
             </div>
           </label>
           <p class="text">Коментар</p>
           <label>
-            <textarea class="model-kom" placeholder="Введіть текст"></textarea>
+            <textarea class="model-kom modal-input" placeholder="Введіть текст"></textarea>
           </label>
           <div class="checkbox-box">
             <label for="">
@@ -498,10 +500,11 @@
             </label>
             <p class="checkbox-text">Погоджуюся з розсилкою та приймаю</p>
             <a href="" class="checkbox-a">Умови договору</a>
-
           </div>
+          <button type="submit" class="modal-button" >
+            Відправити
+          </button>
         </form>
-        <button type="submit" class="modal-button">Відправити</button>
       </div>
     </div>
     <script src="./modal.js"></script>
