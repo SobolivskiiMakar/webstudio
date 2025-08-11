@@ -656,9 +656,9 @@ span {
     margin-bottom: 10px;
 }
 
-.modal-input:focus {
+/* .modal-input:focus {
     border: 1px solid rgb(33, 150, 243);
-}
+} */
 
 .text {
     color: rgb(117, 117, 117);
@@ -736,6 +736,12 @@ span {
     margin-left: 8.38px;
 }
 
+/* .input-svg:hover {
+    border-radius: 4px;
+    border: 1px solid rgb(33, 150, 243);
+    fill: rgb(33, 150, 243);
+} */
+
 .checkbox-a {
     color: rgb(33, 150, 243);
     font-family: Roboto;
@@ -788,9 +794,9 @@ span {
     margin-right: 124px;
 }
 
-input + .modal-svg:focus {
+/* input + .modal-svg:focus {
    fill: #2196F3;
-}
+} */
 
 .is-hidden {
     display: none;
