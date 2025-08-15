@@ -41,7 +41,7 @@
     letter-spacing: 0.78px;
 }
 
-span {
+.span1 {
     color: var(--akcent-color);
     font-family: Raleway;
     font-size: 26px;
@@ -505,8 +505,9 @@ span {
 
 .footer-container {
     display: flex;
-    gap: 70px;
 }
+
+
 
 .footer-list {
     display: flex;
@@ -523,6 +524,7 @@ span {
     line-height: normal;
     letter-spacing: 0.78px;
     margin-bottom: 20px;
+    margin-right: 156px;
 }
 
 #footer-a {
@@ -547,6 +549,7 @@ span {
 
 .footer-box2 {
     padding-top: 12px;
+    margin-right: 93px;
 }
 
 .footer-subtittle {
@@ -601,7 +604,64 @@ span {
     fill: rgba(255, 255, 255, 1);
 }
 
+.box3-text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-top: 12px;
+    margin-right: 10px;
+}
 
+.box3-input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: rgba(33, 150, 243, 0);
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.box3-button {
+    background-color: #2196F3;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* padding-left: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+
+}
+
+span {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
+}
+
+.button-svg {
+    fill: rgb(255, 255, 255);
+    height: 24px;
+    width: 24px;
+}
+
+.box3-form {
+    display: flex; 
+    gap: 12px;
+}
 /* .footer-svg:hover {
     width: 20px;
     height: 20px;
@@ -801,4 +861,3 @@ span {
 .is-hidden {
     display: none;
 }
-

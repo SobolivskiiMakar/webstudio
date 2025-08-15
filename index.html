@@ -23,7 +23,7 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <h3 class="heder-title"><span>Web</span>Studio</h3>
+        <h3 class="heder-title"><span class="span1">Web</span>Studio</h3>
         <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item">
@@ -403,7 +403,7 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-box1">
-          <h3 class="footer-title"><span>Web</span>Studio</h3>
+          <h3 class="footer-title"><span class="span1">Web</span>Studio</h3>
           <address class="footer-address">
             <ul class="footer-list">
               <li class="footer-item">
@@ -452,13 +452,28 @@
             </div>
           </div>
         </div>
+        <div class="box3">
+          <p class="box3-text">Підпишіться на розсилку</p>
+            <form class="box3-form">
+              <label class="box3-label">
+                <input type="email" class="box3-input" placeholder="E-mail" />
+              </label>
+              <button class="box3-button" type="submit">
+                <span>Підписатися</span>
+                <svg class="button-svg">
+                  <use href="./imagine/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </form>
+          
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal-box">
           <svg class="modal-close" data-modal-close>
-            <use href="./imagine/symbol-defs.svg#icon-close" ></use>
+            <use href="./imagine/symbol-defs.svg#icon-close"></use>
           </svg>
         </div>
         <h2 class="modal-tittle">Залиште свої дані, ми вам передзвонимо</h2>
@@ -469,7 +484,7 @@
               <svg class="modal-svg">
                 <use href="./imagine/symbol-defs.svg#icon-person"></use>
               </svg>
-              <input type="text" class="modal-input" required/>
+              <input type="text" class="modal-input" required />
             </div>
           </label>
           <p class="text">Телефон</p>
@@ -478,7 +493,12 @@
               <svg class="modal-svg">
                 <use href="./imagine/symbol-defs.svg#icon-phone"></use>
               </svg>
-              <input type="tel" class="modal-input" required title="Введіть свій телефон"/>
+              <input
+                type="tel"
+                class="modal-input"
+                required
+                title="Введіть свій телефон"
+              />
             </div>
           </label>
           <p class="text">Пошта</p>
@@ -487,12 +507,15 @@
               <svg class="modal-svg">
                 <use href="./imagine/symbol-defs.svg#icon-email"></use>
               </svg>
-              <input type="email" class="modal-input" required/>
+              <input type="email" class="modal-input" required />
             </div>
           </label>
           <p class="text">Коментар</p>
           <label>
-            <textarea class="model-kom modal-input" placeholder="Введіть текст"></textarea>
+            <textarea
+              class="model-kom modal-input"
+              placeholder="Введіть текст"
+            ></textarea>
           </label>
           <div class="checkbox-box">
             <label for="">
@@ -501,9 +524,7 @@
             <p class="checkbox-text">Погоджуюся з розсилкою та приймаю</p>
             <a href="" class="checkbox-a">Умови договору</a>
           </div>
-          <button type="submit" class="modal-button" >
-            Відправити
-          </button>
+          <button type="submit" class="modal-button">Відправити</button>
         </form>
       </div>
     </div>
