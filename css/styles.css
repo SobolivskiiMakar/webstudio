@@ -17,6 +17,24 @@
 }
 
 /* header */
+nav a.active {
+    color: #2196F3;
+}
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -31px;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    transition-property: content;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -78,6 +96,9 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover::after {
@@ -89,7 +110,9 @@
     width: 100%;
     height: 4px;
     background: #2196f3;
-
+    transition-property: content;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list {
@@ -108,16 +131,25 @@
     gap: 10px;
     align-items: center;
     color: var(--akcent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .address-item:hover>.header-envelope {
     fill: var(--akcent-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .address-item:hover>.header-smartphone {
     fill: var(--akcent-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -135,12 +167,15 @@
 
 .address-link:hover {
     color: var(--akcent-color);
-    font-family: Roboto;
+    font-family: Roboto;    
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-envelope {
@@ -154,6 +189,9 @@
     width: 16px;
     height: 12px;
     fill: var(--akcent-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-smartphone {
@@ -166,6 +204,9 @@
     width: 10px;
     height: 16px;
     fill: var(--akcent-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* meeting */
@@ -424,6 +465,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background-color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     /* margin-top: 28px;
     margin-bottom: 42px; */
 
@@ -444,6 +488,9 @@
 
 .team-div:hover>.team-svg {
     fill: rgba(255, 255, 255, 1);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-svg {
@@ -493,10 +540,16 @@
     border-radius: 4px;
     border: 1px solid var(--akcent-color);
     fill: var(--akcent-color);
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-div:hover>.custovers-svg {
     fill: var(--akcent-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custovers-svg {
@@ -507,6 +560,9 @@
 
 .custovers-svg:hover {
     fill: rgba(33, 150, 243, 1);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -599,6 +655,9 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    transition-property: border, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-div {
@@ -777,6 +836,13 @@ span {
     height: 18px;
 }
 
+.modal-close:hover {
+    fill: #2196F3;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .model-kom {
     color: rgba(117, 117, 117, 0.50);
     font-family: Roboto;
@@ -842,16 +908,32 @@ span {
 .modal-input:focus {
     border: solid rgb(33, 150, 243) 1px;
     outline: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input+.modal-svg:hover {
+.label-input:focus {
     fill: #2196F3;
     border: solid rgb(33, 150, 243) 1px;
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label-input:hover {
+    fill: #2196F3;
+    border: solid rgb(33, 150, 243) 1px;
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .textarea:focus {
     border: solid rgb(33, 150, 243) 1px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     /* outline: none; */
 }
 
