@@ -167,7 +167,7 @@ nav a.active::after {
 
 .address-link:hover {
     color: var(--akcent-color);
-    font-family: Roboto;    
+    font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -749,12 +749,19 @@ span {
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: opacity;
+    transition-duration: 1000ms;
+
 }
 
 .modal {
+
+    transform: scale(1);
+    transition-duration: 250ms;
     position: relative;
     padding: 40px;
     width: 528px;
@@ -763,6 +770,10 @@ span {
     border-radius: 4px;
     background: rgb(255, 255, 255);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+}
+
+.is-hidden .modal {
+    transform: scale(0,5);
 }
 
 .modal-tittle {
@@ -962,5 +973,8 @@ span {
 } */
 
 .is-hidden {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+
 }
