@@ -33,6 +33,9 @@ nav a.active::after {
     transition-property: content;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .header {
@@ -282,6 +285,7 @@ nav a.active::after {
     padding-bottom: 6px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+animation: headShake 1s;
 }
 
 
@@ -352,7 +356,7 @@ nav a.active::after {
 .projects-article:hover .overlay {
     opacity: 1;
     transform: translateY(0);
-    
+
 }
 
 
@@ -478,6 +482,19 @@ nav a.active::after {
     margin-bottom: 20px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: team-animation 500ms;
+}
+
+@keyframes team-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
 
 .footer-div {
@@ -529,6 +546,10 @@ nav a.active::after {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    border-radius: 4px;
+    animation: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
     /* padding-left: 28px;
     padding-top: 10px;
     padding-bottom: 10px; */
