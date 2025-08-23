@@ -1,0 +1,54 @@
+.meeting {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* background-color: rgba(47, 48, 58, 1); */
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagine/sectionhero.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.meeting-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    color: var(--accent2-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    max-width: 696px;
+    margin-bottom: 30px;
+}
+
+.meeting-button {
+    color: var(--accent2-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: var(--akcent-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 216;
+    height: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.animate__pulse {
+    animation: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}

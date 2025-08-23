@@ -1,0 +1,119 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: rgb(245, 244, 250);
+}
+
+.team-list {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.team-img {
+  width: 270px;
+  height: 260px;
+}
+
+.team-article {
+  background-color: var(--accent2-color);
+  width: 270px;
+  height: 428px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.team-title {
+  color: var(--title-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.team-subtitle {
+  color: var(--title-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-text {
+  color: var(--text-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  /* margin-bottom: 28px; */
+}
+
+.svgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team-div {
+  margin-top: 28px;
+  margin-bottom: 42px;
+}
+
+.team-div:hover {
+  width: 44px;
+  height: 44px;
+  border: solid rgb(33, 150, 243);
+  border-radius: 50%;
+  background-color: rgb(33, 150, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* margin-top: 28px;
+  margin-bottom: 42px; */
+}
+
+.team-div {
+  width: 44px;
+  height: 44px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 28px;
+  margin-bottom: 42px;
+}
+
+.team-div:hover > .team-svg {
+  fill: rgb(255, 255, 255);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation: team-animation 500ms;
+}
+
+.team-svg {
+  width: 20px;
+  height: 20px;
+  fill: rgb(175, 177, 184);
+}/*# sourceMappingURL=team.css.map */
