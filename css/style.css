@@ -277,7 +277,7 @@ nav a.active::after {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-  /* border-bottom: 1px solid #7575754e; */
+  border-bottom: 1px solid rgba(117, 117, 117, 0.3058823529);
 }
 
 .header-container {
@@ -897,22 +897,6 @@ span {
   gap: 12px;
 }
 
-@keyframes team-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes team-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .customers {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -977,6 +961,22 @@ span {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@keyframes team-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes team-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 :root {
   --main-background: rgba(47, 48, 58, 1);
   --akcent-color: rgba(33, 150, 243, 1);
