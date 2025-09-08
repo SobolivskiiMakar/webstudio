@@ -26,41 +26,43 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <h3 class="heder-title"><span class="span1">Web</span>Studio</h3>
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-item">
-              <a href="./index.html" class="header-link">Студія</a>
+      <div class="container header__container">
+        <h3 class="header__title"><span class="span1">Web</span>Studio</h3>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="./index.html" class="header__link">Студія</a>
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="header-link active">Портфоліо</a>
+            <li class="header__item">
+              <a href="./portfolio.html" class="header__link active"
+                >Портфоліо</a
+              >
             </li>
-            <li class="header-item">
-              <a href="#" class="header-link">Контакти</a>
+            <li class="header__item">
+              <a href="#" class="header__link">Контакти</a>
             </li>
           </ul>
-          <address class="header-address">
-            <ul class="address-list">
-              <li class="address-item">
-                <svg class="header-envelope">
+          <address class="header__address">
+            <ul class="header__address-list">
+              <li class="header__address-item">
+                <svg class="header__envelope">
                   <use
                     class="envelope"
                     href="./imagine/symbol-defs.svg#icon-envelope"
                   ></use>
                 </svg>
-                <a href="mailto:info@devstudio.com" class="address-link"
+                <a href="mailto:info@devstudio.com" class="header__address-link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="address-item">
-                <svg class="header-smartphone">
+              <li class="header__address-item">
+                <svg class="header__smartphone">
                   <use
                     class="smartphone"
                     href="./imagine/symbol-defs.svg#icon-smartphone"
                   ></use>
                 </svg>
-                <a href="tel:+380961111111" class="address-link"
+                <a href="tel:+380961111111" class="header__address-link"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -73,21 +75,21 @@
       <!-- buttons -->
       <section class="buttons">
         <div class="container">
-          <ul class="buttons-list">
-            <li class="buttons-item">
-              <button type="button" class="button">Усі</button>
+          <ul class="buttons__list">
+            <li class="buttons__item">
+              <button type="button" class="buttons__button">Усі</button>
             </li>
             <li class="buttons-item">
-              <button type="button" class="button">Веб-сайти</button>
+              <button type="button" class="buttons__button">Веб-сайти</button>
             </li>
             <li class="buttons-item">
-              <button type="button" class="button">Додатки</button>
+              <button type="button" class="buttons__button">Додатки</button>
             </li>
             <li class="buttons-item">
-              <button type="button" class="button">Дизайн</button>
+              <button type="button" class="buttons__button">Дизайн</button>
             </li>
             <li class="buttons-item">
-              <button type="button" class="button">Маркетинг</button>
+              <button type="button" class="buttons__button">Маркетинг</button>
             </li>
           </ul>
         </div>
@@ -95,37 +97,35 @@
       <!-- projects -->
       <section class="projects">
         <div class="container">
-          <ul class="projects-list">
-            <li class="projects-item">
-              <article class="projects-article">
-                  <img
-                    src="./imagine/project1.webp"
-                    alt="Відкритий сайт на ноутбуці"
-                    class="projects-img"
-                  />
-                 
-                
-                <h3 class="projects-title">Технокряк</h3>
-                <p class="projects-text">Веб-сайт</p>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <article class="projects__article">
+                <img
+                  src="./imagine/project1.webp"
+                  alt="Відкритий сайт на ноутбуці"
+                  class="projects__img"
+                />
+
+                <h3 class="projects__title">Технокряк</h3>
+                <p class="projects__text">Веб-сайт</p>
                 <div class="overlay">
                   <p class="overlay1-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну
-                    особу.
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
               </article>
             </li>
-            <li class="projects-item">
-              <article class="projects-article">
+            <li class="projects__item">
+              <article class="projects__article">
                 <img
                   src="./imagine/project2.webp"
                   alt="Фото баскетболістів"
-                  class="projects-img"
+                  class="projects__img"
                 />
-                <h3 class="projects-title">Постер New Orlean vs Golden Star</h3>
-                <p class="projects-text">Дизайн</p>
+                <h3 class="projects__title">Постер New Orlean vs Golden Star</h3>
+                <p class="projects__text">Дизайн</p>
                 <div class="overlay">
                   <p class="overlay1-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -135,15 +135,15 @@
                 </div>
               </article>
             </li>
-            <li class="projects-item">
-              <article class="projects-article">
+            <li class="projects__item">
+              <article class="projects__article">
                 <img
                   src="./imagine/project3.webp"
                   alt="Лого ресторану"
-                  class="projects-img"
+                  class="projects__img"
                 />
-                <h3 class="projects-title">Ресторан Seafood</h3>
-                <p class="projects-text">Додаток</p>
+                <h3 class="projects__title">Ресторан Seafood</h3>
+                <p class="projects__text">Додаток</p>
                 <div class="overlay">
                   <p class="overlay1-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -153,15 +153,15 @@
                 </div>
               </article>
             </li>
-            <li class="projects-item">
-              <article class="projects-article">
+            <li class="projects__item">
+              <article class="projects__article">
                 <img
                   src="./imagine/project4.webp"
                   alt="Чорні навушники"
-                  class="projects-img"
+                  class="projects__img"
                 />
-                <h3 class="projects-title">Проєкт Prime</h3>
-                <p class="projects-text">Маркетинг</p>
+                <h3 class="projects__title">Проєкт Prime</h3>
+                <p class="projects__text">Маркетинг</p>
                 <div class="overlay">
                   <p class="overlay1-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -171,15 +171,15 @@
                 </div>
               </article>
             </li>
-            <li class="projects-item">
-              <article class="projects-article">
+            <li class="projects__item">
+              <article class="projects__article">
                 <img
                   src="./imagine/project5.webp"
                   alt="Товсті книги"
-                  class="projects-img"
+                  class="projects__img"
                 />
-                <h3 class="projects-title">Проєкт Boxes</h3>
-                <p class="projects-text">Додаток</p>
+                <h3 class="projects__title">Проєкт Boxes</h3>
+                <p class="projects__text">Додаток</p>
                 <div class="overlay">
                   <p class="overlay1-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -189,15 +189,15 @@
                 </div>
               </article>
             </li>
-            <li class="projects-item">
-              <article class="projects-article">
+            <li class="projects__item">
+              <article class="projects__article">
                 <img
                   src="./imagine/project6.webp"
                   alt="Сайт на моніторі"
-                  class="projects-img"
+                  class="projects__img"
                 />
-                <h3 class="projects-title">Inspiration has no Borders</h3>
-                <p class="projects-text">Веб-сайт</p>
+                <h3 class="projects__title">Inspiration has no Borders</h3>
+                <p class="projects__text">Веб-сайт</p>
                 <div class="overlay">
                   <p class="overlay1-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -207,15 +207,15 @@
                 </div>
               </article>
             </li>
-            <li class="projects-item">
-              <article class="projects-article">
+            <li class="projects__item">
+              <article class="projects__article">
                 <img
                   src="./imagine/project7.webp"
                   alt="Білий журнал"
-                  class="projects-img"
+                  class="projects__img"
                 />
-                <h3 class="projects-title">Видання Limited Edition</h3>
-                <p class="projects-text">Дизайн</p>
+                <h3 class="projects__title">Видання Limited Edition</h3>
+                <p class="projects__text">Дизайн</p>
                 <div class="overlay">
                   <p class="overlay1-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -225,15 +225,15 @@
                 </div>
               </article>
             </li>
-            <li class="projects-item">
-              <article class="projects-article">
+            <li class="projects__item">
+              <article class="projects__article">
                 <img
                   src="./imagine/project8.webp"
                   alt="Білий брелок"
-                  class="projects-img"
+                  class="projects__img"
                 />
-                <h3 class="projects-title">Проєкт LAB</h3>
-                <p class="projects-text">Маркетинг</p>
+                <h3 class="projects__title">Проєкт LAB</h3>
+                <p class="projects__text">Маркетинг</p>
                 <div class="overlay">
                   <p class="overlay1-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -243,15 +243,15 @@
                 </div>
               </article>
             </li>
-            <li class="projects-item">
-              <article class="projects-article">
+            <li class="projects__item">
+              <article class="projects__article">
                 <img
                   src="./imagine/project9.webp"
                   alt="Людина пише на ноутбуці"
-                  class="projects-img"
+                  class="projects__img"
                 />
-                <h3 class="projects-title">Growing Business</h3>
-                <p class="projects-text">Додаток</p>
+                <h3 class="projects__title">Growing Business</h3>
+                <p class="projects__text">Додаток</p>
                 <div class="overlay">
                   <p class="overlay1-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -265,67 +265,73 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-box1">
-          <h3 class="footer-title"><span class="span1">Web</span>Studio</h3>
-          <address class="footer-address">
-            <ul class="footer-list">
-              <li class="footer-item">
+      <div class="container footer__container">
+        <div class="footer__box1">
+          <h3 class="footer__title"><span class="span1">Web</span>Studio</h3>
+          <address class="footer__address">
+            <ul class="footer__list">
+              <li class="footer__item">
                 <a
                   href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m10!1m2!2m1!1z0L_RgNC-0YHQv9C10LrRgiDQm9C10YHRliDQo9C60YDQsNGX0L3QutC4LCAyNg!3m6!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858!15sCi7Qv9GA0L7RgdC_0LXQutGCINCb0LXRgdGWINCj0LrRgNCw0ZfQvdC60LgsIDI2kgERY29tcG91bmRfYnVpbGRpbmfgAQA!16s%2Fg%2F1tctq5jv?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
-                  id="footer-a"
+                  id="footer__a"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li>
-                <a href="mailto:info@devstudio.com" class="footer-link"
+                <a href="mailto:info@devstudio.com" class="footer__link"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a href="tel:+380961111111" class="footer-link"
+                <a href="tel:+380961111111" class="footer__link"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-box2">
-          <h3 class="footer-subtittle">ПРИЄДНУЙТЕСЬ</h3>
-          <div class="footer-svgs">
-            <div class="footer-div">
-              <svg class="footer-svg">
+        <div class="footer__box2">
+          <h3 class="footer__subtittle">ПРИЄДНУЙТЕСЬ</h3>
+          <div class="footer__svgs">
+            <div class="footer__div">
+              <svg class="footer__svg">
                 <use href="./imagine/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </div>
-            <div class="footer-div">
-              <svg class="footer-svg">
+            <div class="footer__div">
+              <svg class="footer__svg">
                 <use href="./imagine/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </div>
-            <div class="footer-div">
-              <svg class="footer-svg">
+            <div class="footer__div">
+              <svg class="footer__svg">
                 <use href="./imagine/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </div>
-            <div class="footer-div">
-              <svg class="footer-svg">
+            <div class="footer__div">
+              <svg class="footer__svg">
                 <use href="./imagine/symbol-defs.svg#icon-linkedin"></use>
               </svg>
             </div>
           </div>
         </div>
-        <div class="box3">
-          <p class="box3-text">Підпишіться на розсилку</p>
-          <form class="box3-form">
-            <label class="box3-label">
-              <input type="email" class="box3-input" placeholder="E-mail" required/>
+        <div class="footer__box3">
+          <p class="footer__box3-text">Підпишіться на розсилку</p>
+          <form class="footer__box3-form">
+            <label class="footer__box3-label">
+              <input
+                type="email"
+                class="footer__box3-input"
+                placeholder="E-mail"
+                required
+              />
             </label>
-            <button class="box3-button" type="submit" >
+            <button class="footer__box3-button" type="submit">
               <span>Підписатися</span>
-              <svg class="button-svg">
+              <svg class="footer__box3-svg">
                 <use href="./imagine/symbol-defs.svg#icon-telegram"></use>
               </svg>
             </button>

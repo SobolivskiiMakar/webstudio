@@ -1,17 +1,15 @@
 .whatwedo {
-    padding-bottom: 94px;
-}
+  padding-bottom: 94px;
 
-.whatwedo-list {
+  &__list {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
+  }
 
-}
-
-.whatwedo-title {
-    color: var(--title-color);
+  &__title {
+    color: $title-color;
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -20,25 +18,25 @@
     line-height: normal;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
-}
+  }
 
-.whatwedo-item {
+  &__item {
     position: relative;
-}
+  }
 
-.whatwedo-box {
+  &__box {
     position: absolute;
     bottom: 0;
     width: 370px;
     height: 70px;
-    background-color: rgba(47, 48, 58, 0.80);
+    background-color: rgba(47, 48, 58, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.whatwedo-text {
-    color: var(--accent2-color);
+  &__text {
+    color: $accent2-color;
     text-align: center;
     font-family: Roboto;
     font-size: 14px;
@@ -47,4 +45,5 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+  }
 }

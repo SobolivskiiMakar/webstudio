@@ -1,10 +1,9 @@
 .customers {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-.customers-tittle {
-    color: var(--title-color);
+  &__tittle {
+    color: $title-color;
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -13,16 +12,16 @@
     line-height: normal;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
-}
+  }
 
-.customers-list {
+  &__list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-}
+  }
 
-.customers-div {
+  &__div {
     width: 170px;
     height: 92px;
     flex-shrink: 0;
@@ -31,33 +30,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.customers-div:hover {
+  &__div:hover {
     border-radius: 4px;
-    border: 1px solid var(--akcent-color);
-    fill: var(--akcent-color);
+    border: 1px solid $akcent-color;
+    fill: $akcent-color;
     transition-property: border, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.customers-div:hover>.custovers-svg {
-    fill: var(--akcent-color);
+  &__div:hover > .customers__svg {
+    fill: $akcent-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.custovers-svg {
+  &__svg {
     width: 106px;
     height: 60px;
     fill: rgba(175, 177, 184, 1);
-}
+  }
 
-.custovers-svg:hover {
-    fill: rgba(33, 150, 243, 1);
+  &__svg:hover {
+    fill: $akcent-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
