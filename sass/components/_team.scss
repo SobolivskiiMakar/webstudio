@@ -64,47 +64,21 @@
     }
     
     &__svgs {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         gap: 10px;
         padding-left: 32px;
         padding-right: 32px;
     }
     
-    &__div {
-        margin-top: 28px;
-        margin-bottom: 42px;
-    }
-    
-    &__div:hover {
-        width: 44px;
-        height: 44px;
-        border: solid rgba(33, 150, 243, 1);
-        border-radius: 50%;
-        background-color: rgba(33, 150, 243, 1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition-property: background-color, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        /* margin-top: 28px;
-        margin-bottom: 42px; */
-    
-    }
+
     
     &__div {
-        width: 44px;
-        height: 44px;
-        background-color: rgba(255, 255, 255, 1);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 28px;
-        margin-bottom: 42px;
+        @include footer_div($margin_t: 28px, $margin_b:48px, $b_color:$accent2-color);
     
+        &:hover {
+            @extend %svgs_hover;
+        
+        }
     }
     
     &__div:hover>.team__svg {

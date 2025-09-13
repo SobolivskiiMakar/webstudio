@@ -43,8 +43,7 @@ nav a.active::after {
   }
 
   &__nav {
-    display: flex;
-    align-items: center;
+    @extend %flex;
   }
 
   .header__list {

@@ -3,8 +3,7 @@
   padding-bottom: 50px;
 
   &__list {
-    display: flex;
-    justify-content: center;
+    @extend %flex;
     gap: 8px;
     /* width: 73px;
       height: 38px; */

@@ -37,6 +37,27 @@ img {
   padding-right: 15px;
 }
 
+.footer__div:hover, .team__div:hover {
+  width: 44px;
+  height: 44px;
+  border: solid rgb(33, 150, 243);
+  border-radius: 50%;
+  background-color: rgb(33, 150, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  animation: team-animation 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers__div, .footer__box3-button, .whatwedo__box, .team__svgs, .meeting__button, .header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -291,10 +312,6 @@ nav a.active::after {
   line-height: normal;
   letter-spacing: 0.78px;
 }
-.header__nav {
-  display: flex;
-  align-items: center;
-}
 .header .header__list {
   display: flex;
   gap: 50px;
@@ -460,18 +477,16 @@ nav a.active::after {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
-  border-radius: 4px;
-  background: rgb(33, 150, 243);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 216;
-  height: 50px;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.animate__pulse {
+  background-color: rgb(33, 150, 243);
+  width: 216;
+  height: 50px;
+  gap: 10px;
+  border-radius: 4px;
   animation: pulse;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -587,31 +602,9 @@ nav a.active::after {
   /* margin-bottom: 28px; */
 }
 .team__svgs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   padding-left: 32px;
   padding-right: 32px;
-}
-.team__div {
-  margin-top: 28px;
-  margin-bottom: 42px;
-}
-.team__div:hover {
-  width: 44px;
-  height: 44px;
-  border: solid rgb(33, 150, 243);
-  border-radius: 50%;
-  background-color: rgb(33, 150, 243);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-property: background-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* margin-top: 28px;
-  margin-bottom: 42px; */
 }
 .team__div {
   width: 44px;
@@ -622,7 +615,7 @@ nav a.active::after {
   align-items: center;
   justify-content: center;
   margin-top: 28px;
-  margin-bottom: 42px;
+  margin-bottom: 48px;
 }
 .team__div:hover > .team__svg {
   fill: rgb(255, 255, 255);
@@ -666,9 +659,6 @@ nav a.active::after {
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .whatwedo__text {
   color: rgb(255, 255, 255);
@@ -720,7 +710,7 @@ nav a.active::after {
   margin-right: 93px;
 }
 .footer__subtittle {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -732,27 +722,8 @@ nav a.active::after {
 .footer__svgs {
   display: flex;
   /* justify-content: center;
-  align-items: center; */
+      align-items: center; */
   gap: 10px;
-}
-.footer__div {
-  margin-top: 16px;
-  margin-bottom: 30px;
-}
-.footer__div:hover {
-  width: 44px;
-  height: 44px;
-  border: solid rgb(33, 150, 243);
-  border-radius: 50%;
-  background-color: rgb(33, 150, 243);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transition-property: border, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation: team-animation 500ms;
 }
 .footer__div {
   width: 44px;
@@ -762,6 +733,11 @@ nav a.active::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.footer__div:hover {
+  margin-bottom: 20px;
 }
 .footer__svg {
   width: 20px;
@@ -791,20 +767,17 @@ nav a.active::after {
   padding-bottom: 15px;
 }
 .footer__box3-button {
-  background-color: #2196F3;
+  background-color: rgb(33, 150, 243);
   width: 200px;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   border-radius: 4px;
   animation: pulse;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   /* padding-left: 28px;
-  padding-top: 10px;
-  padding-bottom: 10px; */
+      padding-top: 10px;
+      padding-bottom: 10px; */
 }
 .footer__box3-svg {
   fill: rgb(255, 255, 255);
@@ -863,9 +836,6 @@ span {
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid rgb(175, 177, 184);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .customers__div:hover {
   border-radius: 4px;

@@ -1,0 +1,20 @@
+%svgs_hover {
+  width: 44px;
+  height: 44px;
+  border: solid rgba(33, 150, 243, 1);
+  border-radius: 50%;
+  background-color: rgba(33, 150, 243, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  animation: team-animation 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
