@@ -20,14 +20,21 @@ nav a.active::after {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #7575754e;
+  
+
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 
   &__container {
     display: flex;
-
-   
+      // justify-content: center;
+      align-items: center;
+      
   }
 
   &__title {
@@ -37,22 +44,34 @@ nav a.active::after {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.78px;
-
-
+    letter-spacing: 0.03em;
   }
 
   &__nav {
-    @extend %flex;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-  .header__list {
+  &__list {
     display: flex;
     gap: 50px;
-    margin-left: 93px;
+    
+
+    @media screen and (min-width: 768px) {
+      margin-left: 87px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+    }
     /* margin-right: 344px; */
   }
- 
+
   &__link {
     color: $title-color;
     font-family: Roboto;
@@ -93,7 +112,19 @@ nav a.active::after {
 
   &__address-list {
     display: flex;
-    gap: 30px;
+    
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+      margin-left: 96px;
+      gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 315px;
+      flex-direction: row;
+      gap: 30px;
+    }
+
   }
 
   &__address-item {
@@ -129,16 +160,20 @@ nav a.active::after {
   &__address-link {
     color: $text-color;
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    
 
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
     &:hover {
       color: $akcent-color;
       font-family: Roboto;
-      font-size: 14px;
+      font-size: 12px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
@@ -150,14 +185,17 @@ nav a.active::after {
   }
 
   &__envelope {
-    width: 16px;
-    height: 12px;
-    margin-left: 318px;
+    width: 14px;
+    height: 10px;
+    
     fill: rgb(117, 117, 117);
-
-    &:hover {
+    @media screen and (min-width: 1200px) {
       width: 16px;
       height: 12px;
+    }
+    &:hover {
+      width: 14px;
+      height: 10px;
       fill: $akcent-color;
       transition-property: fill;
       transition-duration: 250ms;
@@ -167,21 +205,38 @@ nav a.active::after {
 
   &__smartphone {
     width: 10px;
-    height: 16px;
+    height: 14px;
     fill: rgb(117, 117, 117);
 
     &:hover {
       width: 10px;
-      height: 16px;
+      height: 14px;
       fill: $akcent-color;
       transition-property: fill;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+  }
+
+  &__burger {
+    fill: #000;
+   
+    width: 24px;
+    height: 16px;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__menu {
+  
+    margin-left: auto;
+    background-color: white;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
-
 
 .span1 {
   color: $akcent-color;
@@ -192,37 +247,3 @@ nav a.active::after {
   line-height: normal;
   letter-spacing: 0.78px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
