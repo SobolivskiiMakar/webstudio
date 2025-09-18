@@ -33,18 +33,20 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   outline: solid red;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    width: 738px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1280px;
+    width: 1200px;
   }
 }
 
@@ -459,6 +461,11 @@ nav a.active::after {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .header__address-link:hover {
+    font-size: 14px;
+  }
+}
 .header__envelope {
   width: 14px;
   height: 10px;
@@ -522,12 +529,18 @@ nav a.active::after {
 }
 
 .meeting {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   /* background-color: rgba(47, 48, 58, 1); */
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagine/sectionhero.webp");
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 1200px) {
+  .meeting {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .meeting__container {
   display: flex;
@@ -538,14 +551,21 @@ nav a.active::after {
   color: rgb(255, 255, 255);
   text-align: center;
   font-family: Roboto;
-  font-size: 44px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 900;
-  line-height: 60px;
+  line-height: 162%;
   letter-spacing: 2.64px;
   text-transform: uppercase;
   max-width: 696px;
   margin-bottom: 30px;
+  align-self: center;
+}
+@media screen and (min-width: 1200px) {
+  .meeting__tittle {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 .meeting__button {
   color: rgb(255, 255, 255);
@@ -562,7 +582,7 @@ nav a.active::after {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: rgb(33, 150, 243);
-  width: 216;
+  width: 200;
   height: 50px;
   gap: 10px;
   border-radius: 4px;
@@ -570,20 +590,67 @@ nav a.active::after {
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
+@media screen and (min-width: 1200px) {
+  .meeting__button {
+    background-color: rgb(33, 150, 243);
+    width: 216;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 4px;
+    animation: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+}
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .features__list {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.features__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 .features__item::before {
   content: "";
   border-radius: 4px;
-  background: #F5F4FA;
-  width: 270px;
+  background: #f5f4fa;
+  width: 450px;
   height: 120px;
   flex-shrink: 0;
   display: flex;
@@ -592,6 +659,18 @@ nav a.active::after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px 70px;
+}
+@media screen and (min-width: 768px) {
+  .features__item::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item::before {
+    width: 270px;
+    height: 120px;
+  }
 }
 .features__item:nth-child(2)::before {
   background-image: url("../imagine/clock.webp");
@@ -611,7 +690,13 @@ nav a.active::after {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
 }
 .features__text {
   color: rgb(117, 117, 117);
@@ -619,8 +704,9 @@ nav a.active::after {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 171%;
   letter-spacing: 0.42px;
+  text-align: start;
 }
 
 .team {

@@ -33,18 +33,20 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   outline: solid red;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    width: 738px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1280px;
+    width: 1200px;
   }
 }
 
@@ -242,6 +244,11 @@ nav a.active::after {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .header__address-link:hover {
+    font-size: 14px;
+  }
 }
 .header__envelope {
   width: 14px;

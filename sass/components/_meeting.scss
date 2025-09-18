@@ -1,6 +1,6 @@
 .meeting {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   /* background-color: rgba(47, 48, 58, 1); */
   background-image: linear-gradient(
       to right,
@@ -10,6 +10,14 @@
     url("../imagine/sectionhero.webp");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &__container {
     display: flex;
@@ -21,14 +29,23 @@
     color: $accent2-color;
     text-align: center;
     font-family: Roboto;
-    font-size: 44px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 900;
-    line-height: 60px;
+    line-height: 162%;
     letter-spacing: 2.64px;
     text-transform: uppercase;
     max-width: 696px;
     margin-bottom: 30px;
+    align-self: center;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 60px;
+    }
   }
 
   &__button {
@@ -45,6 +62,19 @@
     padding-right: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
-    @include button($height: 50px, $width: 216);
+    @include button($height: 50px, $width: 200);
+    @media screen and (min-width: 1200px) {
+      background-color: $akcent-color;
+      width: 216;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 4px;
+      animation: pulse;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+    }
   }
 }
