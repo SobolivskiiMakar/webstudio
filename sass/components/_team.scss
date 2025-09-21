@@ -1,99 +1,159 @@
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgba(245, 244, 250, 1);
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: rgba(245, 244, 250, 1);
+  }
 
-    &__list {
-        display: block;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        gap: 30px;
-    
+  &__list {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
     }
 
-    &__img {
-        width: 270px;
-        height: 260px;
+    @media screen and (min-width: 1200px) {
+    }
+  }
+
+  &__img {
+    width: 450px;
+    height: 460px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      width: 354px;
+      height: 374px;
     }
 
-    &__article {
-        background-color: $accent2-color;
-        width: 270px;
-        height: 428px;
-        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-    
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 260px;
+    }
+  }
+
+  &__article {
+    background-color: $accent2-color;
+    width: 450px;
+    height: 622px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 536px;
     }
 
-    &__title {
-        color: $title-color;
-        text-align: center;
-        font-family: Roboto;
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 428px;
+    }
+  }
+
+  &__title {
+    color: $title-color;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
         font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
         letter-spacing: 1.08px;
-        margin-bottom: 50px;
     }
+  }
 
-    &__subtitle {
-        color: $title-color;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.48px;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-
-    &__text {
-        color: $text-color;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.48px;
-        /* margin-bottom: 28px; */
-    }
-    
-    &__svgs {
-        @extend %flex;
-        gap: 10px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    
+  &__subtitle {
+    color: $title-color;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 
     
-    &__div {
-        @include footer_div($margin_t: 28px, $margin_b:48px, $b_color:$accent2-color);
+  }
+
+  &__text {
+    color: $text-color;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
     
-        &:hover {
-            @extend %svgs_hover;
+    /* margin-bottom: 28px; */
+  }
+
+  &__svgs {
+    @extend %flex;
+    gap: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
         
-        }
     }
+  }
+
+  &__div {
+    @include footer_div(
+      $margin_t: 16px,
+      $margin_b: 48px,
+      $b_color: $accent2-color
+    );
+
     
-    &__div:hover>.team__svg {
-        fill: rgba(255, 255, 255, 1);
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        animation: team-animation 500ms;
+    @media screen and (min-width: 768px) {
     }
-    
-    
-    
-    &__svg {
-        width: 20px;
-        height: 20px;
-        fill: rgba(175, 177, 184, 1);
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 28px;
     }
+
+    &:hover {
+      @extend %svgs_hover;
+    }
+  }
+
+  &__div:hover > .team__svg {
+    fill: rgba(255, 255, 255, 1);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: team-animation 500ms;
+  }
+
+  &__svg {
+    width: 20px;
+    height: 20px;
+    fill: rgba(175, 177, 184, 1);
+  }
 }

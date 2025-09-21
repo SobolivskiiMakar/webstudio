@@ -730,9 +730,15 @@ nav a.active::after {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: rgb(245, 244, 250);
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__list {
   display: block;
@@ -740,28 +746,66 @@ nav a.active::after {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-direction: row;
+  }
+}
 .team__img {
-  width: 270px;
-  height: 260px;
+  width: 450px;
+  height: 460px;
+}
+@media screen and (min-width: 768px) {
+  .team__img {
+    flex-direction: row;
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+    height: 260px;
+  }
 }
 .team__article {
   background-color: rgb(255, 255, 255);
-  width: 270px;
-  height: 428px;
+  width: 450px;
+  height: 622px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .team__article {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__article {
+    width: 270px;
+    height: 428px;
+  }
 }
 .team__title {
   color: rgb(33, 33, 33);
   text-align: center;
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+  letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    letter-spacing: 1.08px;
+  }
 }
 .team__subtitle {
   color: rgb(33, 33, 33);
@@ -799,8 +843,13 @@ nav a.active::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 28px;
+  margin-top: 16px;
   margin-bottom: 48px;
+}
+@media screen and (min-width: 1200px) {
+  .team__div {
+    margin-top: 28px;
+  }
 }
 .team__div:hover > .team__svg {
   fill: rgb(255, 255, 255);
@@ -817,6 +866,12 @@ nav a.active::after {
 
 .whatwedo {
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .whatwedo {
+    display: block;
+  }
 }
 .whatwedo__list {
   display: flex;
