@@ -1,17 +1,35 @@
 .customers {
-  padding-top: 94px;
+  padding-top: 46px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
   padding-bottom: 94px;
 
+  }
   &__tittle {
     color: $title-color;
     text-align: center;
     font-family: Roboto;
-    font-size: 36px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+    
+    }
+  
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
@@ -19,15 +37,24 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
   }
 
   &__div {
-    width: 170px;
+    width: 210px;
     height: 92px;
     flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid rgb(175, 177, 184);
     @extend %flex;
+
+    @media screen and (min-width: 768px) {
+    width: 226px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
   &__div:hover {
