@@ -1,12 +1,37 @@
 .buttons {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
   padding-bottom: 50px;
+    
+  }
 
   &__list {
-    @extend %flex;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
     gap: 8px;
     /* width: 73px;
       height: 38px; */
+
+      @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        
+        
+      }
+    
   }
 
   &__button {

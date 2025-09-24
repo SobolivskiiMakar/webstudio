@@ -96,13 +96,15 @@
     flex-direction: column;
     padding-bottom: 30px;
 
+
     @media screen and (min-width: 768px) {
     }
 
     @media screen and (min-width: 1200px) {
-      margin-right: 93px;
+      margin-right: 91px;
       align-items: start;
       margin-bottom: 100px;
+      margin-top: 20px;
       
     }
   }

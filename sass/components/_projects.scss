@@ -1,11 +1,31 @@
 .projects {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 
+
+  @media screen and (min-width: 768px) {
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+     padding-bottom: 94px;
+    
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;
-    // flex-basis: calc((100% * 30px)/3);
+    align-items: center;
+    // justify-content: center;
+    // flex-basis: calc  ((100%*30px)/2);
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+    flex-basis: calc(( 50% - 15px) / 2);
+    }
+  
+    @media screen and (min-width: 1200px) {
+       padding-bottom: 94px;
+      
+    }
   }
 
   &__title {
@@ -23,12 +43,22 @@
   }
 
   &__article {
-    width: 370px;
+    width: 100%;
     height: 404px;
     border: 1px solid rgba(238, 238, 238, 1);
     background: rgba(255, 255, 255, 1);
     position: relative;
     overflow: hidden;
+    align-self: center;
+
+    @media screen and (min-width: 768px) {
+    width: 354px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      
+    }
 
     &:hover {
       transition-property: box-shadow;

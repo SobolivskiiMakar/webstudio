@@ -91,13 +91,22 @@ img {
   transform: scale(1);
   transition-duration: 250ms;
   position: relative;
-  padding: 40px;
-  width: 528px;
-  height: 581px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 450px;
+  height: 609px;
   flex-shrink: 0;
   border-radius: 4px;
   background: rgb(255, 255, 255);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .is-hidden .modal {
@@ -118,7 +127,7 @@ img {
 
 .modal-input {
   /* position: relative; */
-  width: 448px;
+  width: 370px;
   height: 40px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -127,6 +136,11 @@ img {
   padding-top: 12px;
   padding-bottom: 12px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-input {
+    width: 448px;
+  }
 }
 
 .text {
@@ -168,7 +182,7 @@ img {
 }
 
 .modal-close:hover {
-  fill: #2196F3;
+  fill: #2196f3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -183,11 +197,17 @@ img {
   line-height: normal;
   letter-spacing: 0.12px;
   width: 100%;
-  width: 448px;
+  width: 370px;
   height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px 12px 16px;
+  margin: 0;
+}
+@media screen and (min-width: 1200px) {
+  .model-kom {
+    width: 448px;
+  }
 }
 
 .checkbox-box {
@@ -200,18 +220,23 @@ img {
 .checkbox-text {
   color: #757575;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
   margin-left: 8.38px;
 }
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+  }
+}
 
 .checkbox-a {
   color: rgb(33, 150, 243);
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -223,6 +248,11 @@ img {
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-a {
+    font-size: 14px;
+  }
 }
 
 .checkbox {
@@ -238,17 +268,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-input:focus {
-  fill: #2196F3;
-  border: solid rgb(33, 150, 243) 1px;
-  transition-property: fill, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .label-input:hover {
-  fill: #2196F3;
-  border: solid rgb(33, 150, 243) 1px;
+  fill: #2196f3;
   transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -263,7 +284,7 @@ img {
 }
 
 .modal-button {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -275,11 +296,17 @@ img {
   height: 50px;
   flex-shrink: 0;
   border-radius: 4px;
-  background: #2196F3;
+  background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-left: 124px;
+  margin-left: 85px;
+  margin-right: 85px;
   margin-top: 30px;
-  margin-right: 124px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-button {
+    margin-left: 124px;
+    margin-right: 124px;
+  }
 }
 
 .is-hidden {
@@ -1009,9 +1036,10 @@ nav a.active::after {
 }
 @media screen and (min-width: 1200px) {
   .footer__box2 {
-    margin-right: 93px;
+    margin-right: 91px;
     align-items: start;
     margin-bottom: 100px;
+    margin-top: 20px;
   }
 }
 .footer__subtittle {
