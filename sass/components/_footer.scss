@@ -12,13 +12,14 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
     }
 
     @media screen and (min-width: 1200px) {
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: flex-start;
+      align-items: flex-start;
     }
   }
 
@@ -35,7 +36,7 @@
 
     @media screen and (min-width: 1200px) {
       margin-right: 0;
-      margin-bottom: 60px;
+      margin-bottom: 0;
       justify-content: start;
       align-items: start;
     }
@@ -103,8 +104,8 @@
     @media screen and (min-width: 1200px) {
       margin-right: 91px;
       align-items: start;
-      margin-bottom: 100px;
-      margin-top: 20px;
+      margin-bottom: 0;
+      margin-top: 0;
       
     }
   }
@@ -222,7 +223,7 @@
 
     @media screen and (min-width: 1200px) {
       flex-direction: row;
-      margin-bottom: 94px;
+      margin-bottom: 0;
     }
   }
 }
