@@ -69,8 +69,8 @@
             </ul>
           </address>
         </nav>
-        <button class="header__menu data-modal-open">
-          <svg class="header__burger data-modal-open" >
+        <button class="header__menu js-open-menu">
+          <svg class="header__burger" >
             <use href="./imagine/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
@@ -344,5 +344,45 @@
         </div>
       </div>
     </footer>
+    <div class="menu  is-open js-menu-container" >
+      <button class="menu__close js-close-menu">
+      <svg class="menu__svg " >
+        <use href="./imagine/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="./index.html " class="menu__links">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a href="./portfolio.html " class="menu__links">Портфоліо</a>
+        </li>
+        <li class="menu__item " >
+          <a href="#" class="menu__links">Контакти</a>
+        </li>
+      </ul>
+
+      <address>
+        <ul class="menu__address-list">
+          <li class="menu__address-item">
+            <a href="tel:+38 096 111 11 11" class="menu__link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="menu__address-item">
+            <a href="mailto:info@devstudio.com" class="menu__a"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="menu__ul">
+        <li class="menu__li">Instagram</li>
+        <li class="menu__li">Twitter</li>
+        <li class="menu__li">Facebook</li>
+        <li class="menu__li">LinkedIn</li>
+      </ul>
+    </div>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>
