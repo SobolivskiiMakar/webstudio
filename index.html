@@ -67,7 +67,7 @@
             </ul>
           </address>
         </nav>
-        <button  class="header__menu">
+        <button class="header__menu " js-open-menu>
           <svg class="header__burger">
             <use href="./imagine/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -103,7 +103,6 @@
             </li>
             <li class="features__item">
               <article class="features__article">
-                
                 <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
                 <p class="features__text">
                   Завдання організації, особливо рамки і місце навчання кадрів
@@ -113,7 +112,6 @@
             </li>
             <li class="features__item">
               <article class="features__article">
-                
                 <h3 class="features__title">ПЛАНУВАННЯ</h3>
                 <p class="features__text">
                   Так само консультація з широким активом значною мірою
@@ -123,7 +121,6 @@
             </li>
             <li class="features__item">
               <article class="features__article">
-                
                 <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                 <p class="features__text">
                   Значимість цих проблем настільки очевидна, що реалізація
@@ -522,6 +519,41 @@
         </form>
       </div>
     </div>
-    <script src="./modal.js"></script>
+    <!-- Menu -->
+    <div class="menu  is-hidden " js-menu-container>
+      <button class="menu__close "js-close-menu>
+      <svg class="menu__svg " >
+        <use href="./imagine/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+      <ul class="menu__list">
+        <li class="menu__item">Студія</li>
+        <li class="menu__item">Портфоліо</li>
+        <li class="menu__item">Контакти</li>
+      </ul>
+
+      <address>
+        <ul class="menu__address-list">
+          <li class="menu__address-item">
+            <a href="tel:+38 096 111 11 11" class="menu__link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="menu__address-item">
+            <a href="mailto:info@devstudio.com" class="menu__a"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="menu__ul">
+        <li class="menu__li">Instagram</li>
+        <li class="menu__li">Twitter</li>
+        <li class="menu__li">Facebook</li>
+        <li class="menu__li">LinkedIn</li>
+      </ul>
+    </div>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>
