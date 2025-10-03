@@ -845,6 +845,7 @@ span {
   line-height: 122%;
   letter-spacing: 0.02em;
   color: #2196f3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .is-open {
