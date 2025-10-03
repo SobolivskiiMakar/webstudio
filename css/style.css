@@ -1353,7 +1353,7 @@ span {
   color: #2196f3;
 }
 
-.is-hidden {
+.is-open {
   opacity: 0;
   pointer-events: none;
 }/*# sourceMappingURL=style.css.map */
