@@ -1293,7 +1293,6 @@ span {
   height: 40px;
   width: 40px;
   display: flex;
-  justify-content: end;
   margin-left: auto;
   background-color: white;
 }
