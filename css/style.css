@@ -560,7 +560,7 @@ nav a.active::after {
   padding-top: 118px;
   padding-bottom: 118px;
   /* background-color: rgba(47, 48, 58, 1); */
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagine/sectionhero.webp");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../imagine/phone/bg@meeting-phone_1x.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -67,7 +67,7 @@
             </ul>
           </address>
         </nav>
-        <button class="header__menu js-open-menu" >
+        <button class="header__menu js-open-menu">
           <svg class="header__burger">
             <use href="./imagine/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -137,38 +137,93 @@
           <h2 class="whatwedo__title">Чим ми займаємося</h2>
           <ul class="whatwedo__list">
             <li class="whatwedo__item">
-              <img
-                src="./imagine/whatwedo1.webp"
-                height="294"
-                width="370"
-                alt="Як людина вводить код"
-                class="whatwedo__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./imagine/desktop/img@whatwodo-first_desktop-1x.webp 1x,
+                    ./imagine/desktop/img@whatwodo-first_desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <img
+                  src="./imagine/whatwedo1.webp"
+                  height="294"
+                  width="370"
+                  alt="Як людина вводить код"
+                  class="whatwedo__img"
+                />
+              </picture>
+
               <div class="whatwedo__box">
                 <p class="whatwedo__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="whatwedo__item">
-              <img
-                src="./imagine/whatwedo2.webp"
-                height="294"
-                width="370"
-                alt="Людина друкує"
-                class="whatwedo__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./imagine/desktop/img@whatwodo-second_desktop-1x.webp 1x,
+                    ./imagine/desktop/img@whatwodo-second_desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./imagine/tablet/img@whatwodo-second_tablet-1x.webp 1x,
+                    ./imagine/tablet/img@whatwodo-second_tablet-2x.webp 2x
+                  "
+                  media="(min-width: 736px)"
+                />
+                <source
+                  srcset="
+                    ./imagine/phone/img@whatwodo-second_phone-1x.webp 1x,
+                    ./imagine/phone/img@whatwodo-second_phone-2x.webp 2x
+                  "
+                  media="(max-width: 735px)"
+                />
+                <img
+                  src="./imagine/whatwedo2.webp"
+                  height="294"
+                  width="370"
+                  alt="Людина друкує"
+                  class="whatwedo__img"
+                />
+              </picture>
+
               <div class="whatwedo__box">
                 <p class="whatwedo__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="whatwedo__item">
-              <img
-                src="./imagine/whatwedo3.webp"
-                height="294"
-                width="370"
-                alt="Людина малює"
-                ц
-                class="whatwedo__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./imagine/desktop/img@whatwodo-third_desktop-1x.webp 1x,
+                    ./imagine/desktop/img@whatwodo-third_desktop-2x.webp 2x
+                  "media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./imagine/tablet/img@whatwodo-third_tablet-1x.webp 1x,
+                    ./imagine/tablet/img@whatwodo-third_tablet-2x.webp 2x
+                  "media="(min-width: 736px)"
+                />
+                <source
+                  srcset="
+                    ./imagine/phone/img@whatwodo-third_phone-1x.webp 1x,
+                    ./imagine/phone/img@whatwodo-third_phone-2x.webp 2x
+                  "media="(max-width: 735px)"
+                />
+                <img
+                  src="./imagine/whatwedo3.webp"
+                  height="294"
+                  width="370"
+                  alt="Людина малює"
+                  ц
+                  class="whatwedo__img"
+                />
+              </picture>
+
               <div class="whatwedo__box">
                 <p class="whatwedo__text">Дизайнерські рішення</p>
               </div>
@@ -183,13 +238,34 @@
           <ul class="team__list">
             <li class="team__item">
               <article class="team__article">
-                <img
-                  src="./imagine/team1.webp"
-                  height="220"
-                  width="280"
-                  alt="Чоловік з комп'ютером"
-                  class="team__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@team-igor_desktop-1x.webp 1x,
+                      ./imagine/desktop/img@team-igor_desktop-2x.webp 2x
+                    "media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@team-igor_tablet-1x.webp 1x,
+                      ./imagine/tablet/img@team-igor_tablet-2x.webp 2x
+                    "media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@team-igor_phone-1x.webp 1x,
+                      ./imagine/phone/img@team-igor_phone-2x.webp 2x
+                    "media="(max-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/team1.webp"
+                    height="220"
+                    width="280"
+                    alt="Чоловік з комп'ютером"
+                    class="team__img"
+                  />
+                </picture>
+
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
                 <div class="team__svgs">
@@ -220,13 +296,34 @@
             </li>
             <li class="team__item">
               <article class="team__article">
-                <img
-                  src="./imagine/team2.webp"
-                  height="220"
-                  width="280"
-                  alt="Жінка"
-                  class="team__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@team-olga_desktop-1x.webp 1x,
+                      ./imagine/desktop/img@team-olga_desktop-2x.webp 2x
+                    "media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@team-olga_tablet-1x.webp 1x,
+                      ./imagine/tablet/img@team-olga_tablet-2x.webp 2x
+                    "media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@team-olga_phone-1x.webp 1x,
+                      ./imagine/phone/img@team-olga_phone-2x.webp 2x
+                    "media="(max-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/team2.webp"
+                    height="220"
+                    width="280"
+                    alt="Жінка"
+                    class="team__img"
+                  />
+                </picture>
+
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
                 <div class="team__svgs">
@@ -257,13 +354,34 @@
             </li>
             <li class="team__item">
               <article class="team__article">
-                <img
-                  src="./imagine/team3.webp"
-                  height="220"
-                  width="280"
-                  alt="Чоловік"
-                  class="team__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@team-mukola_desktop-1x.webp 1x,
+                      ./imagine/desktop/img@team-mukola_desktop-2x.webp 2x
+                    "media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@team-mukola_tablet-1x.webp 1x,
+                      ./imagine/tablet/img@team-mukola_tablet-2x.webp 2x
+                    "media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@team-mukola_phone-1x.webp 1x,
+                      ./imagine/phone/img@team-mukola_phone-2x.webp 2x
+                    "media="(min-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/team3.webp"
+                    height="220"
+                    width="280"
+                    alt="Чоловік"
+                    class="team__img"
+                  />
+                </picture>
+
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
                 <div class="team__svgs">
@@ -294,13 +412,34 @@
             </li>
             <li class="team__item">
               <article class="team__article">
-                <img
-                  src="./imagine/team4.webp"
-                  height="220"
-                  width="280"
-                  alt="Чоловік в окулярах"
-                  class="team__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@team-mihailo_desktop-1x.webp 1x,
+                      ./imagine/desktop/img@team-mihailo_desktop-2x.webp 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@team-mihailo_tablet-1x.webp 1x,
+                      ./imagine/tablet/img@team-mihailo_tablet-2x.webp 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@team-mihailo_phone-1x.webp 1x,
+                      ./imagine/phone/img@team-mihailo_phone-2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./imagine/team4.webp"
+                    height="220"
+                    width="280"
+                    alt="Чоловік в окулярах"
+                    class="team__img"
+                  />
+                </picture>
+
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
                 <div class="team__svgs">
@@ -520,12 +659,12 @@
       </div>
     </div>
     <!-- Menu -->
-    <div class="menu  is-open js-menu-container" >
+    <div class="menu is-open js-menu-container">
       <button class="menu__close js-close-menu">
-      <svg class="menu__svg " >
-        <use href="./imagine/symbol-defs.svg#icon-close"></use>
-      </svg>
-    </button>
+        <svg class="menu__svg">
+          <use href="./imagine/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
       <ul class="menu__list">
         <li class="menu__item">
           <a href="./index.html " class="menu__links">Студія</a>
@@ -533,7 +672,7 @@
         <li class="menu__item">
           <a href="./portfolio.html " class="menu__links">Портфоліо</a>
         </li>
-        <li class="menu__item " >
+        <li class="menu__item">
           <a href="#" class="menu__links">Контакти</a>
         </li>
       </ul>

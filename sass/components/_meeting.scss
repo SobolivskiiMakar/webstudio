@@ -7,7 +7,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../imagine/sectionhero.webp");
+    url("../imagine/phone/bg@meeting-phone_1x.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -18,9 +18,20 @@
   margin-right: auto;
   max-width: 100%;
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../imagine/phone/bg@meeting-phone_2x.webp");
+  }
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    background-image: url("../imagine/tablet/bg@meeting-tablet_1x.webp");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../imagine/tablet/bg@meeting-tablet_2x.webp");
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -28,6 +39,12 @@
     padding-bottom: 200px;
     width: 1600px;
     height: 600px;
+    background-image: url("../imagine/desktop/bg@meeting-desktopt_1x.webp");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../imagine/desktop/bg@meeting-desktopt_2x.webp");
+    }
   }
 
   &__container {
