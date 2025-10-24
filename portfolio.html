@@ -70,7 +70,7 @@
           </address>
         </nav>
         <button class="header__menu js-open-menu">
-          <svg class="header__burger" >
+          <svg class="header__burger">
             <use href="./imagine/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
@@ -105,11 +105,34 @@
           <ul class="projects__list">
             <li class="projects__item">
               <article class="projects__article">
-                <img
-                  src="./imagine/project1.webp"
-                  alt="Відкритий сайт на ноутбуці"
-                  class="projects__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@portfolio-1_1x.webp 1x,
+                      ./imagine/desktop/img@portfolio-1_2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@portfolio_tablet-1_1x.webp 1x,
+                      ./imagine/tablet/img@portfolio_tablet-1_2x.webp 2x
+                    "
+                    media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@portfolio_phone-1_1x.webp 1x,
+                      ./imagine/phone/img@portfolio_phone-1_2x.webp 2x
+                    "
+                    media="(max-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/project1.webp"
+                    alt="Відкритий сайт на ноутбуці"
+                    class="projects__img"
+                  />
+                </picture>
 
                 <h3 class="projects__title">Технокряк</h3>
                 <p class="projects__text">Веб-сайт</p>
@@ -124,12 +147,38 @@
             </li>
             <li class="projects__item">
               <article class="projects__article">
-                <img
-                  src="./imagine/project2.webp"
-                  alt="Фото баскетболістів"
-                  class="projects__img"
-                />
-                <h3 class="projects__title">Постер New Orlean vs Golden Star</h3>
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@portfolio-2_1x.webp 1x,
+                      ./imagine/desktop/img@portfolio-2_2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@portfolio_tablet-2_1x.webp 1x,
+                      ./imagine/tablet/img@portfolio_tablet-2_2x.webp 2x
+                    "
+                    media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@portfolio_phone-2_1x.webp 1x,
+                      ./imagine/phone/img@portfolio_phone-2_2x.webp 2x
+                    "
+                    media="(max-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/project2.webp"
+                    alt="Фото баскетболістів"
+                    class="projects__img"
+                  />
+                </picture>
+
+                <h3 class="projects__title">
+                  Постер New Orlean vs Golden Star
+                </h3>
                 <p class="projects__text">Дизайн</p>
                 <div class="overlay">
                   <p class="overlay1-text">
@@ -142,11 +191,35 @@
             </li>
             <li class="projects__item">
               <article class="projects__article">
-                <img
-                  src="./imagine/project3.webp"
-                  alt="Лого ресторану"
-                  class="projects__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@portfolio-3_1x.webp 1x,
+                      ./imagine/desktop/img@portfolio-3_2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@portfolio_tablet-3_1x.webp 1x,
+                      ./imagine/tablet/img@portfolio_tablet-3_2x.webp 2x
+                    "
+                    media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@portfolio_phone-3_1x.webp 1x,
+                      ./imagine/phone/img@portfolio_phone-3_2x.webp 2x
+                    "
+                    media="(max-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/project3.webp"
+                    alt="Лого ресторану"
+                    class="projects__img"
+                  />
+                </picture>
+
                 <h3 class="projects__title">Ресторан Seafood</h3>
                 <p class="projects__text">Додаток</p>
                 <div class="overlay">
@@ -160,11 +233,35 @@
             </li>
             <li class="projects__item">
               <article class="projects__article">
-                <img
-                  src="./imagine/project4.webp"
-                  alt="Чорні навушники"
-                  class="projects__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@portfolio-4_1x.webp 1x,
+                      ./imagine/desktop/img@portfolio-4_2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@portfolio_tablet-4_1x.webp 1x,
+                      ./imagine/tablet/img@portfolio_tablet-4_2x.webp 2x
+                    "
+                    media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@portfolio_phone-4_1x.webp 1x,
+                      ./imagine/phone/img@portfolio_phone-4_2x.webp 2x
+                    "
+                    media="(max-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/project4.webp"
+                    alt="Чорні навушники"
+                    class="projects__img"
+                  />
+                </picture>
+
                 <h3 class="projects__title">Проєкт Prime</h3>
                 <p class="projects__text">Маркетинг</p>
                 <div class="overlay">
@@ -178,11 +275,35 @@
             </li>
             <li class="projects__item">
               <article class="projects__article">
-                <img
-                  src="./imagine/project5.webp"
-                  alt="Товсті книги"
-                  class="projects__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@portfolio-5_1x.webp 1x,
+                      ./imagine/desktop/img@portfolio-5_2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@portfolio_tablet-5_1x.webp 1x,
+                      ./imagine/tablet/img@portfolio_tablet-5_2x.webp 2x
+                    "
+                    media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@portfolio_phone-5_1x.webp 1x,
+                      ./imagine/phone/img@portfolio_phone-5_2x.webp 2x
+                    "
+                    media="(max-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/project5.webp"
+                    alt="Товсті книги"
+                    class="projects__img"
+                  />
+                </picture>
+
                 <h3 class="projects__title">Проєкт Boxes</h3>
                 <p class="projects__text">Додаток</p>
                 <div class="overlay">
@@ -196,11 +317,35 @@
             </li>
             <li class="projects__item">
               <article class="projects__article">
-                <img
-                  src="./imagine/project6.webp"
-                  alt="Сайт на моніторі"
-                  class="projects__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@portfolio-6_1x.webp 1x,
+                      ./imagine/desktop/img@portfolio-6_2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@portfolio_tablet-6_1x.webp 1x,
+                      ./imagine/tablet/img@portfolio_tablet-6_2x.webp 2x
+                    "
+                    media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@portfolio_phone-6_1x.webp 1x,
+                      ./imagine/phone/img@portfolio_phone-6_2x.webp 2x
+                    "
+                    media="(max-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/project6.webp"
+                    alt="Сайт на моніторі"
+                    class="projects__img"
+                  />
+                </picture>
+
                 <h3 class="projects__title">Inspiration has no Borders</h3>
                 <p class="projects__text">Веб-сайт</p>
                 <div class="overlay">
@@ -214,11 +359,35 @@
             </li>
             <li class="projects__item">
               <article class="projects__article">
-                <img
-                  src="./imagine/project7.webp"
-                  alt="Білий журнал"
-                  class="projects__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@portfolio-7_1x.webp 1x,
+                      ./imagine/desktop/img@portfolio-7_2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@portfolio_tablet-7_1x.webp 1x,
+                      ./imagine/tablet/img@portfolio_tablet-7_2x.webp 2x
+                    "
+                    media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@portfolio_phone-7_1x.webp 1x,
+                      ./imagine/phone/img@portfolio_phone-7_2x.webp 2x
+                    "
+                    media="(max-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/project7.webp"
+                    alt="Білий журнал"
+                    class="projects__img"
+                  />
+                </picture>
+
                 <h3 class="projects__title">Видання Limited Edition</h3>
                 <p class="projects__text">Дизайн</p>
                 <div class="overlay">
@@ -232,11 +401,35 @@
             </li>
             <li class="projects__item">
               <article class="projects__article">
-                <img
-                  src="./imagine/project8.webp"
-                  alt="Білий брелок"
-                  class="projects__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@portfolio-8_1x.webp 1x,
+                      ./imagine/desktop/img@portfolio-8_2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@portfolio_tablet-8_1x.webp 1x,
+                      ./imagine/tablet/img@portfolio_tablet-8_2x.webp 2x
+                    "
+                    media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@portfolio_phone-8_1x.webp 1x,
+                      ./imagine/phone/img@portfolio_phone-8_2x.webp 2x
+                    "
+                    media="(max-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/project8.webp"
+                    alt="Білий брелок"
+                    class="projects__img"
+                  />
+                </picture>
+
                 <h3 class="projects__title">Проєкт LAB</h3>
                 <p class="projects__text">Маркетинг</p>
                 <div class="overlay">
@@ -250,11 +443,34 @@
             </li>
             <li class="projects__item">
               <article class="projects__article">
-                <img
-                  src="./imagine/project9.webp"
-                  alt="Людина пише на ноутбуці"
-                  class="projects__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./imagine/desktop/img@portfolio-9_1x.webp 1x,
+                      ./imagine/desktop/img@portfolio-9_2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/tablet/img@portfolio_tablet-9_1x.webp 1x,
+                      ./imagine/tablet/img@portfolio_tablet-9_2x.webp 2x
+                    "
+                    media="(min-width: 736px)"
+                  />
+                  <source
+                    srcset="
+                      ./imagine/phone/img@portfolio_phone-9_1x.webp 1x,
+                      ./imagine/phone/img@portfolio_phone-9_2x.webp 2x
+                    "
+                    media="(max-width: 735px)"
+                  />
+                  <img
+                    src="./imagine/project9.webp"
+                    alt="Людина пише на ноутбуці"
+                    class="projects__img"
+                  />
+                </picture>
                 <h3 class="projects__title">Growing Business</h3>
                 <p class="projects__text">Додаток</p>
                 <div class="overlay">
@@ -344,12 +560,12 @@
         </div>
       </div>
     </footer>
-    <div class="menu  is-open js-menu-container" >
+    <div class="menu is-open js-menu-container">
       <button class="menu__close js-close-menu">
-      <svg class="menu__svg " >
-        <use href="./imagine/symbol-defs.svg#icon-close"></use>
-      </svg>
-    </button>
+        <svg class="menu__svg">
+          <use href="./imagine/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
       <ul class="menu__list">
         <li class="menu__item">
           <a href="./index.html " class="menu__links">Студія</a>
@@ -357,7 +573,7 @@
         <li class="menu__item">
           <a href="./portfolio.html " class="menu__links">Портфоліо</a>
         </li>
-        <li class="menu__item " >
+        <li class="menu__item">
           <a href="#" class="menu__links">Контакти</a>
         </li>
       </ul>
