@@ -573,18 +573,18 @@ nav a.active::after {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .meeting {
-    background-image: url("../imagine/phone/bg@meeting-phone_2x.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagine/phone/bg@meeting-phone_2x.webp");
   }
 }
 @media screen and (min-width: 768px) {
   .meeting {
     width: 768px;
-    background-image: url("../imagine/tablet/bg@meeting-tablet_1x.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagine/tablet/bg@meeting-tablet_1x.webp");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .meeting {
-    background-image: url("../imagine/tablet/bg@meeting-tablet_2x.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagine/tablet/bg@meeting-tablet_2x.webp");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -593,12 +593,12 @@ nav a.active::after {
     padding-bottom: 200px;
     width: 1600px;
     height: 600px;
-    background-image: url("../imagine/desktop/bg@meeting-desktopt_1x.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagine/desktop/bg@meeting-desktopt_1x.webp");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .meeting {
-    background-image: url("../imagine/desktop/bg@meeting-desktopt_2x.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagine/desktop/bg@meeting-desktopt_2x.webp");
   }
 }
 .meeting__container {
